@@ -1,0 +1,178 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-left h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #888;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f8f9fb;
+  text-align: left;
+}
+
+th {
+  padding: 12px;
+  font-size: 13px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 14px 12px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.completed {
+  background: #e6f7f0;
+  color: #1c8c5e;
+}
+
+.badge.incomplete {
+  background: #fff4d6;
+  color: #c28a00;
+}
+
+.badge.missing {
+  background: #ffe6ec;
+  color: #c23450;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #2f5bea;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #2f5bea;
+  color: white;
+  border: none;
+}
+
+.loader,
+.error,
+.empty {
+  padding: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}
