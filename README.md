@@ -68,6 +68,6 @@ cd server
 npm install
 node index.js
 
-Email: admin@tentwenty.com
-Password: password123
+Email: admin
+Password: password
 
